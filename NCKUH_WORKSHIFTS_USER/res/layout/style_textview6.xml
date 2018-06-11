@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@color/black"
+    android:orientation="horizontal"
+    android:padding="1dp" >
+
+    <TextView
+        android:id="@+id/textview_nu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:gravity="center_vertical|left"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        tools:ignore="RtlHardcoded,HardcodedText,RelativeOverlap" />
+
+    <TextView
+        android:id="@+id/textview_sun"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="1dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        tools:ignore="RtlHardcoded,RelativeOverlap,HardcodedText" />
+
+    <TextView
+        android:id="@+id/textview_mon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="1dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        tools:ignore="RtlHardcoded,RelativeOverlap,HardcodedText" />
+
+    <TextView
+        android:id="@+id/textview_tue"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="1dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        tools:ignore="RtlHardcoded,RelativeOverlap,HardcodedText" />
+
+    <TextView
+        android:id="@+id/textview_wed"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="1dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        tools:ignore="RtlHardcoded,RelativeOverlap,HardcodedText" />
+
+    <TextView
+        android:id="@+id/textview_thu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="1dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        tools:ignore="RtlHardcoded,RelativeOverlap,HardcodedText" />
+
+    <TextView
+        android:id="@+id/textview_fri"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="1dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        tools:ignore="RtlHardcoded,RelativeOverlap,HardcodedText" />
+
+    <TextView
+        android:id="@+id/textview_sat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="1dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        tools:ignore="RtlHardcoded,RelativeOverlap,HardcodedText" />
+
+</LinearLayout>

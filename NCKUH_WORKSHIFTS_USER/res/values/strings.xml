@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">急診室排班 Ubeta</string>
+    <string name="app_version">1.1</string>
+    <string name="selected">5月20</string>
+    <string name="add">(新增)</string>
+    <string name="icon_0">+</string>
+    <string name="showMessage">親愛的用戶您好:\n由於Android 6.0 以上的版本在權限上有些更動，我們需要您授權以下的權限，麻煩您開啟權限後按下返回鍵，感謝。</string>
+
+</resources>

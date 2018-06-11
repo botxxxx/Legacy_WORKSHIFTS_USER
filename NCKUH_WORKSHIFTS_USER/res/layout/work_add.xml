@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:background="@color/blue" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="新增規則"
+                android:textColor="@android:color/white"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                tools:ignore="RtlHardcoded,HardcodedText,ObsoleteLayoutParam" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="名稱:"
+                android:textColor="@color/gray_dr"
+                android:textSize="30sp"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/ed_workname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:background="@color/gone"
+                android:drawableBottom="@drawable/gray_baseline"
+                android:gravity="center"
+                android:inputType="text"
+                android:maxLength="10"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                tools:ignore="RtlHardcoded,LabelFor" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="20dp" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.3"
+                android:text="時間:"
+                android:textColor="@color/gray_dr"
+                android:textSize="30sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/tv_stime"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.05"
+                android:drawableBottom="@drawable/gray_baseline"
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.8"
+                android:gravity="center_horizontal"
+                android:text="到"
+                android:textColor="@color/gray_dr"
+                android:textSize="30sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/tv_etime"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:layout_weight="3.05"
+                android:drawableBottom="@drawable/gray_baseline"
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                tools:ignore="RtlHardcoded,HardcodedText" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="20dp" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="人數:"
+                android:textColor="@color/gray_dr"
+                android:textSize="30sp"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/ed_people"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:background="@color/gone"
+                android:drawableBottom="@drawable/gray_baseline"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="2"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                tools:ignore="RtlHardcoded,LabelFor" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="20dp" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="循環:"
+                android:textColor="@color/gray_dr"
+                android:textSize="30sp"
+                tools:ignore="HardcodedText" />
+
+            <Spinner
+                android:id="@+id/sp_cycle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                tools:ignore="RtlHardcoded" />
+        </TableRow>
+    </LinearLayout>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="5dp" >
+
+        <Button
+            android:id="@+id/bt_work_enable"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_marginRight="2.5dp"
+            android:layout_weight="1"
+            android:background="@drawable/item_background_rectangle"
+            android:text="確認"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            tools:ignore="HardcodedText,ButtonStyle,RtlHardcoded" />
+
+        <Button
+            android:id="@+id/bt_work_disable"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="2.5dp"
+            android:layout_weight="1"
+            android:background="@drawable/item_background_rectangle"
+            android:text="取消"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            tools:ignore="HardcodedText,ButtonStyle,RtlHardcoded" />
+    </TableRow>
+
+</RelativeLayout>

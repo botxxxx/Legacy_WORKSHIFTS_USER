@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/af_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="105年02月份急診部醫師工作分配及值班表"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        tools:ignore="RtlHardcoded,HardcodedText,ObsoleteLayoutParam" />
+
+    <ListView
+        android:id="@+id/af_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/af_top"
+        android:layout_margin="1dp"
+        android:background="@color/white"
+        android:divider="@color/gray_dr"
+        android:dividerHeight="1px"
+        android:footerDividersEnabled="true"
+        tools:ignore="InefficientWeight,RtlHardcoded" >
+    </ListView>
+
+</RelativeLayout>

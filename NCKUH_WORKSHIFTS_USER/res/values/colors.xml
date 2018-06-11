@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="red">#ff0000</color>
+    <color name="blue">#1fc2f3</color>
+    <color name="blue_li">#e3f2fd</color>
+    <color name="blue_dr">#1a4c6d</color>
+    <color name="gold">#fffa00</color>
+    <color name="green">#2dff74</color>
+    <color name="gray">#3d3d3d</color>
+    <color name="gray_dr">#999999</color>
+    <color name="gray_li">#cccccc</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="gone">#00000000</color>
+    <color name="white_gone">#a0f1f1f1</color>
+    <color name="black_gone">#304c4c4c</color>
+
+</resources>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <TableRow
+        android:id="@+id/uv_top"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/blue"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/user_tl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:text="A"
+            android:textColor="@android:color/white"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            tools:ignore="RtlHardcoded,HardcodedText,ObsoleteLayoutParam" />
+
+        <TextView
+            android:id="@+id/user_tr"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            android:text="12月25"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:ignore="RtlHardcoded,HardcodedText,ObsoleteLayoutParam" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/uv_down"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:textColor="@android:color/white"
+        android:visibility="visible"
+        tools:ignore="RtlHardcoded,HardcodedText" >
+
+        <ImageView
+            android:id="@+id/uv_yes"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_checked"
+            tools:ignore="HardcodedText,RtlHardcoded,ContentDescription" />
+
+        <ImageView
+            android:id="@+id/uv_no"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_multiply"
+            tools:ignore="HardcodedText,RtlHardcoded,ContentDescription" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/uv_down"
+        android:layout_below="@+id/uv_top"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="20dp" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="意願:"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            tools:ignore="HardcodedText" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical"
+                tools:ignore="ScrollViewSize,RtlHardcoded" >
+
+                <CheckedTextView
+                    android:id="@+id/cb_A"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="白班"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+
+                <CheckedTextView
+                    android:id="@+id/cb_B"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="白觀"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+
+                <CheckedTextView
+                    android:id="@+id/cb_C"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="小夜"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+
+                <CheckedTextView
+                    android:id="@+id/cb_D"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="夜觀"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+
+                <CheckedTextView
+                    android:id="@+id/cb_E"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="大夜"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+            </LinearLayout>
+        </ScrollView>
+    </TableRow>
+
+</RelativeLayout>

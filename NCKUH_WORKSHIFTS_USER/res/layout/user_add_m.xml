@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <TableRow
+        android:id="@+id/uvm_top"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/blue"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:singleLine="true"
+            android:text="新增人員"
+            android:textColor="@android:color/white"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            tools:ignore="RtlHardcoded,HardcodedText,ObsoleteLayoutParam" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/uvm_down"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:textColor="@android:color/white"
+        android:visibility="visible"
+        tools:ignore="RtlHardcoded,HardcodedText" >
+
+        <ImageView
+            android:id="@+id/uvm_yes"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_checked"
+            tools:ignore="HardcodedText,RtlHardcoded,ContentDescription" />
+
+        <ImageView
+            android:id="@+id/uvm_no"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_multiply"
+            tools:ignore="HardcodedText,RtlHardcoded,ContentDescription" />
+    </TableRow>
+
+    <LinearLayout
+        android:id="@+id/uvm_mind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/uvm_top"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical" >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="代號:"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/uvm_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:background="@color/gone"
+                android:gravity="center"
+                android:maxLength="10"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                tools:ignore="RtlHardcoded,LabelFor,TextFields,HardcodedText" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="密碼:"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/uvm_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:background="@color/gone"
+                android:gravity="center"
+                android:hint="1-10位英數字"
+                android:maxLength="10"
+                android:digits="0123456789abcdefghijklnmopqrstuvwxyzABCDEFGHIJKLNMOPQRSTUVWXYZ"
+                android:singleLine="true"
+                android:inputType="textPassword"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                tools:ignore="RtlHardcoded,LabelFor,TextFields,HardcodedText" />
+        </TableRow>
+        
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="排班上限:"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/uvm_max"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:background="@color/gone"
+                android:gravity="center"
+                android:maxLength="2"
+                android:digits="0123456789"
+                android:singleLine="true"
+                android:inputType="phone"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                tools:ignore="RtlHardcoded,LabelFor,TextFields,HardcodedText" />
+        </TableRow>
+    </LinearLayout>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/uvm_down"
+        android:layout_below="@+id/uvm_mind"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="15dp" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="備註:"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            tools:ignore="HardcodedText" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <EditText
+                android:id="@+id/uvm_other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginRight="3dp"
+                android:background="@color/gone"
+                android:gravity="center|left"
+                android:maxLength="800"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                tools:ignore="RtlHardcoded,LabelFor,TextFields,HardcodedText" />
+        </ScrollView>
+    </TableRow>
+</RelativeLayout>

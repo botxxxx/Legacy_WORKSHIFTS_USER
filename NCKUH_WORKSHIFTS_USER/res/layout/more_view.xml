@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <!-- PagerTabStrip给ViewPager设置标题 -->
+
+    <TableRow
+        android:id="@+id/m_down"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:textColor="@android:color/white"
+        android:visibility="gone"
+        tools:ignore="RtlHardcoded,HardcodedText" >
+
+        <ImageView
+            android:id="@+id/m_yes"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_checked"
+            tools:ignore="HardcodedText,RtlHardcoded,ContentDescription" />
+
+        <ImageView
+            android:id="@+id/m_no"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_multiply"
+            tools:ignore="HardcodedText,RtlHardcoded,ContentDescription" />
+    </TableRow>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/m_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/m_down" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/m_down"
+        android:drawableBottom="@drawable/gray_baseline"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>

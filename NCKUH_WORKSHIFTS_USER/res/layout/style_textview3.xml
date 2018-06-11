@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:orientation="horizontal"
+    android:padding="5dp" >
+
+    <TextView
+        android:id="@+id/t3_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        tools:ignore="RtlHardcoded,HardcodedText,RelativeOverlap" />
+
+    <EditText
+        android:id="@+id/t3_equal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.3"
+        android:gravity="center"
+        android:hint="0"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        tools:ignore="RtlHardcoded,HardcodedText,RelativeOverlap" />
+    <!--
+    <Spinner
+        android:id="@+id/t3_spp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        atools:ignore="RtlHardcoded" />-->
+
+</LinearLayout>

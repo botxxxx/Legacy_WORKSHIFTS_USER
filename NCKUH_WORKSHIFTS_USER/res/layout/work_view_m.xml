@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <TableRow
+        android:id="@+id/wvm_top"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/blue" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:singleLine="true"
+            android:text="班表內容"
+            android:textColor="@android:color/white"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            tools:ignore="RtlHardcoded,HardcodedText,ObsoleteLayoutParam" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/wvm_down"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:textColor="@android:color/white"
+        android:visibility="visible"
+        tools:ignore="RtlHardcoded,HardcodedText" >
+
+        <ImageView
+            android:id="@+id/wvm_yes"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_checked"
+            tools:ignore="HardcodedText,RtlHardcoded,ContentDescription" />
+
+        <ImageView
+            android:id="@+id/wvm_no"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_multiply"
+            tools:ignore="HardcodedText,RtlHardcoded,ContentDescription" />
+    </TableRow>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/wvm_down"
+        android:layout_below="@+id/wvm_top" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="ScrollViewSize" >
+            
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="班別:"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    tools:ignore="HardcodedText" />
+
+                <Spinner
+                    android:id="@+id/wvm_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    tools:ignore="RtlHardcoded" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="名稱:"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    tools:ignore="HardcodedText" />
+
+                <EditText
+                    android:id="@+id/wvm_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/gone"
+                    android:gravity="center"
+                    android:maxLength="10"
+                    android:singleLine="true"
+                    android:inputType="text"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    tools:ignore="RtlHardcoded,LabelFor,TextFields" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="20dp" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="開始:"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/wvm_stime"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    tools:ignore="HardcodedText" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="20dp" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="結束:"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/wvm_etime"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    tools:ignore="RtlHardcoded,HardcodedText" />
+            </TableRow>
+            
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="20dp" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="工時:"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    tools:ignore="HardcodedText" />
+
+                <EditText
+                    android:id="@+id/wvm_time"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:background="@color/gone"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    tools:ignore="RtlHardcoded,LabelFor,HardcodedText" />
+            </TableRow>
+            
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="20dp" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="費用:"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    tools:ignore="HardcodedText" />
+
+                <EditText
+                    android:id="@+id/wvm_sum"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:background="@color/gone"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    tools:ignore="RtlHardcoded,LabelFor,HardcodedText" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="20dp" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="人數:"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    tools:ignore="HardcodedText" />
+
+                <EditText
+                    android:id="@+id/wvm_people"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:background="@color/gone"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    tools:ignore="RtlHardcoded,LabelFor,HardcodedText" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="20dp" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="連續工作上限:"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    tools:ignore="HardcodedText" />
+
+                <EditText
+                    android:id="@+id/wvm_maxcon"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="2"
+                    android:background="@color/gone"
+                    android:gravity="center"
+                    android:maxLength="2"
+                    android:inputType="number"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    tools:ignore="RtlHardcoded,LabelFor,HardcodedText,TextFields" />
+            </TableRow>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <RelativeLayout
+        android:id="@+id/w_top"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@color/blue"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/w_title"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="班表清單"
+            android:textColor="@android:color/white"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            tools:ignore="RtlHardcoded,HardcodedText" />
+
+        <ImageView
+            android:id="@+id/w_menu"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_equal"
+            tools:ignore="HardcodedText,RtlHardcoded,ContentDescription" />
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/w_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/w_top"
+        android:layout_margin="5dp"
+        android:divider="@color/gray_dr"
+        android:dividerHeight="1px"
+        android:footerDividersEnabled="true" >
+    </ListView>
+
+    <TextView
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="1dp"
+        android:drawableRight="@drawable/gray_baseline3"
+        tools:ignore="RtlHardcoded" />
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <TableRow
+        android:id="@+id/auto_top"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/blue" >
+
+        <TextView
+            android:id="@+id/auto_lastmonth"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:singleLine="true"
+            android:text="前月紀錄 "
+            android:textColor="@android:color/white"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            tools:ignore="RtlHardcoded,HardcodedText,ObsoleteLayoutParam" />
+    </TableRow>
+
+    <ListView
+        android:id="@+id/auto_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/auto_top"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="15dp"
+        android:divider="@color/gray_dr"
+        android:dividerHeight="1px"
+        android:footerDividersEnabled="true"
+        tools:ignore="InefficientWeight,RtlHardcoded" >
+    </ListView>
+</RelativeLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:background="@color/blue" >
+
+        <TableRow
+            android:id="@+id/tr_block"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:gravity="center|left"
+                android:text="@string/selected"
+                android:textColor="@color/white"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                tools:ignore="RtlHardcoded,RelativeOverlap" />
+
+            <TextView
+                android:id="@+id/tv_add"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="bottom"
+                android:text="@string/add"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                tools:ignore="RtlHardcoded,RelativeOverlap" />
+
+        </TableRow>
+
+        <ImageView
+            android:id="@+id/im_menu"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_equal"
+            tools:ignore="HardcodedText,RtlHardcoded,ContentDescription" />
+
+        <ImageView
+            android:id="@+id/im_cloud"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_toLeftOf="@+id/im_menu"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_cloud_erron"
+            tools:ignore="RtlHardcoded,HardcodedText,ContentDescription" />
+
+        <ImageView
+            android:id="@+id/im_up"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/im_cloud"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_up"
+            android:visibility="gone"
+            tools:ignore="RtlHardcoded,HardcodedText,ContentDescription" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <iccl.workshifts.ubeta.WeekDayView
+            android:layout_width="fill_parent"
+            android:layout_height="35dp" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/page"
+            android:layout_width="fill_parent"
+            android:layout_height="300dp" />
+
+        <ListView
+            android:id="@+id/lv_1_main"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:divider="@color/gray_dr"
+            android:dividerHeight="1px"
+            android:footerDividersEnabled="true" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

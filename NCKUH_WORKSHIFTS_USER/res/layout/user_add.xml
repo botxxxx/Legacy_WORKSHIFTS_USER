@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:background="@color/blue" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="新增人員"
+                android:textColor="@android:color/white"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                tools:ignore="RtlHardcoded,HardcodedText,ObsoleteLayoutParam" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="姓名:"
+                android:textColor="@color/gray_dr"
+                android:textSize="30sp"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/ed_username"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:background="@color/gone"
+                android:drawableBottom="@drawable/gray_baseline"
+                android:inputType="text"
+                android:maxLength="10"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                tools:ignore="RtlHardcoded,LabelFor" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="20dp" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="電話:"
+                android:textColor="@color/gray_dr"
+                android:textSize="30sp"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/ed_phone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:background="@color/gone"
+                android:drawableBottom="@drawable/gray_baseline"
+                android:inputType="number"
+                android:maxLength="10"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                tools:ignore="TextFields,RtlHardcoded,LabelFor" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="20dp" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="意願:"
+                android:textColor="@color/gray_dr"
+                android:textSize="30sp"
+                tools:ignore="HardcodedText" />
+
+            <CheckBox
+                android:id="@+id/cb_Anything"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="  Anything-皆可"
+                android:textSize="30sp"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="20dp" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text=""
+                android:textColor="@color/gray_dr"
+                android:textSize="30sp"
+                tools:ignore="HardcodedText" />
+
+            <CheckBox
+                android:id="@+id/cb_Morning"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="  Morning-白班"
+                android:textSize="30sp"
+                tools:ignore="RtlHardcoded,HardcodedText" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="20dp" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text=""
+                android:textColor="@color/gray_dr"
+                android:textSize="30sp"
+                tools:ignore="HardcodedText" />
+
+            <CheckBox
+                android:id="@+id/cb_Evening"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="  Evening-小夜"
+                android:textSize="30sp"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="20dp" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text=""
+                android:textColor="@color/gray_dr"
+                android:textSize="30sp"
+                tools:ignore="HardcodedText" />
+
+            <CheckBox
+                android:id="@+id/cb_Night"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="  Night-大夜"
+                android:textSize="30sp"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+        </TableRow>
+    </LinearLayout>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="5dp" >
+
+        <Button
+            android:id="@+id/bt_user_enable"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_marginRight="2.5dp"
+            android:layout_weight="1"
+            android:background="@drawable/item_background_rectangle"
+            android:text="確認"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            tools:ignore="HardcodedText,ButtonStyle,RtlHardcoded" />
+
+        <Button
+            android:id="@+id/bt_user_disable"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="2.5dp"
+            android:layout_weight="1"
+            android:background="@drawable/item_background_rectangle"
+            android:text="取消"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            tools:ignore="HardcodedText,ButtonStyle,RtlHardcoded" />
+    </TableRow>
+
+</RelativeLayout>
